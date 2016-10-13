@@ -23,7 +23,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.trello.rxlifecycle.ActivityEvent;
+import com.trello.rxlifecycle.android.ActivityEvent;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import me.myshows.android.MyShowsApplication;

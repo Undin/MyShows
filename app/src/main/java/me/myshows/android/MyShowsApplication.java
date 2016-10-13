@@ -28,6 +28,9 @@ public class MyShowsApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            return;
+        }
 
         CookieManager cookieManager = new CookieManager();
         JavaNetCookieJar cookieJar = new JavaNetCookieJar(cookieManager);
